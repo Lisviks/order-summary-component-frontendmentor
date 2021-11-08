@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,500;0,700;1,900&display=swap');
+
+:root {
+  --pale-blue: hsl(225, 100%, 94%);
+  --brigth-blue: hsl(245, 75%, 52%);
+  --very-pale-blue: hsl(225, 100%, 98%);
+  --desatureated-blue: hsl(224, 23%, 55%);
+  --dark-blue: hsl(223, 47%, 23%);
+}
+
+body {
+  font-family: 'Red Hat Display', sans-serif;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--pale-blue);
+}
+
+.card {
+  max-width: 375px;
+  margin: auto 0;
+  border-radius: 20px;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card .image img {
+  width: 100%;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.card .card-title {
+  font-size: 1.5rem;
+  color: var(--dark-blue);
+  font-weight: 900;
+  margin: 1.5rem 0;
+}
+
+.card .card-content {
+  width: 80%;
+  color: var(--desatureated-blue);
+  text-align: center;
+  line-height: 1.5rem;
+}
+
+.card .price-section {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--very-pale-blue);
+  padding: 1rem;
+  width: 80%;
+  margin: 1.5rem 0;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  position: relative;
+}
+
+.card .price-section .pricing {
+  position: absolute;
+  left: 30%;
+}
+
+.card .price-section .price-title {
+  color: var(--dark-blue);
+  font-weight: 700;
+  margin: 0.2rem 0;
+}
+
+.card .price-section .price {
+  color: var(--desatureated-blue);
+}
+
+.card .price-section a {
+  color: var(--brigth-blue);
+}
+
+.card .price-section a:hover {
+  text-decoration: none;
+  opacity: 0.6;
+}
+
+.card .payment-btn {
+  width: 80%;
+  background: var(--brigth-blue);
+  padding: 1rem;
+  text-align: center;
+  color: var(--very-pale-blue);
+  font-weight: 700;
+  border-radius: 15px;
+  margin-bottom: 1.5rem;
+}
+
+.card .payment-btn:hover {
+  cursor: pointer;
+  opacity: 0.6;
+}
+
+.card .cancel-btn {
+  margin-bottom: 2rem;
+  color: var(--desatureated-blue);
+  font-weight: 700;
+}
+
+.card .cancel-btn:hover {
+  cursor: pointer;
+  color: var(--dark-blue);
+}
